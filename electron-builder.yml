@@ -1,0 +1,19 @@
+appId: com.example.waterreminder
+productName: Water Reminder
+mac:
+  icon: 'assets/icons/app-icon.icns'
+  target:
+    - dmg
+    - zip
+files:
+  - src/**/* 
+  - assets/**/* 
+  - package.json
+  - electron-builder.yml
+  - README.md
+directories:
+  buildResources: 'assets/icons'
+  output: 'dist'
+publish:
+  provider: generic
+  url: 'https://your-download-url.com'

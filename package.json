@@ -1,0 +1,31 @@
+{
+  "name": "water-reminder",
+  "version": "0.5.0",
+  "description": "A simple Electron application that reminds you to drink water every hour.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "makeicons": "node scripts/makeicons.js"
+  },
+  "keywords": [
+    "Electron",
+    "water",
+    "reminder",
+    "timer"
+  ],
+  "author": "Roberto Marchetti <rmarchet@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "electron": "^25.0.0",
+    "electron-builder": "^24.0.0"
+  },
+  "build": {
+    "appId": "com.example.waterreminder",
+    "mac": {
+      "icon": "assets/icons/app-icon.icns"
+    }
+  }
+}
