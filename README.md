@@ -1,3 +1,5 @@
+<img src="assets/icons/icon.png" width="200" />
+
 # Water Reminder Application
 
 This is a simple Electron application designed to remind you to drink water every hour. The application features a user-friendly interface and utilizes a timer to send notifications at regular intervals.
@@ -45,6 +47,8 @@ To start the application, run the following command:
 yarn start
 ```
 
+<img src="Screenshot.png" />
+
 ## Building the Application
 
 To build the application for distribution, use:
@@ -52,6 +56,12 @@ To build the application for distribution, use:
 yarn build
 ```
 
+## Creating the ICNS file
+MacOS Icons can be created starting from the icon.png file:
+```
+yarn makeicons assets/icons/icon.png assets/icons/app-icon.icns
+```
+
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
