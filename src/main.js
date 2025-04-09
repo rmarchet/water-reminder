@@ -29,8 +29,9 @@ function createWindow() {
     },
     vibrancy: 'under-window',
     visualEffectState: 'active',
-    backgroundColor: '#00FFFFFF',
-    icon: path.join(__dirname, '../assets/icons/app-icon.icns')
+    backgroundColor: '#00ffffff',
+    icon: path.join(__dirname, '../assets/icons/app-icon.icns'),
+    // transparent: true,
   });
 
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
@@ -55,11 +56,11 @@ function createTray() {
   tray = new Tray(image);
 
   const contextMenu = Menu.buildFromTemplate([
-    { label: 'Apri', click: () => mainWindow.show() },
-    { label: 'Avvia timer', click: startTimer },
-    { label: 'Ferma timer', click: stopTimer },
+    { label: 'Open', click: () => mainWindow.show() },
+    { label: 'Start timer', click: startTimer },
+    { label: 'Stop timer', click: stopTimer },
     { type: 'separator' },
-    { label: 'Esci', click: () => app.quit() }
+    { label: 'Quit', click: () => app.quit() }
   ]);
   tray.setToolTip('Water Reminder');
   tray.setContextMenu(contextMenu);
